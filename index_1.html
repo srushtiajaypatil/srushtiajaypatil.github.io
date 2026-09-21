@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Srushti Patil | Technical Project Manager</title>
+<meta name="description" content="Srushti Patil is a Technical Project Manager with 6+ years leading cross-functional software and infrastructure projects at Amazon, the University of Cincinnati and TCS.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Srushti Patil | Technical Project Manager">
+<meta property="og:description" content="Cross-functional software and infrastructure projects, from initiation to closure. 52% faster processing, $160K annual savings, zero-regression launches.">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3ESP%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --surface-2: #f4f4f2;
+    --text: #1c1917;
+    --muted: #57534e;
+    --line: #e7e5e4;
+    --accent: #0f766e;
+    --accent-strong: #0b5c56;
+    --accent-soft: #e6f4f2;
+    --on-accent: #ffffff;
+    --radius: 14px;
+    --shadow: 0 1px 2px rgba(28,25,23,.04), 0 4px 16px rgba(28,25,23,.04);
+    --max: 980px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12110f;
+      --surface: #1b1a17;
+      --surface-2: #232220;
+      --text: #f5f5f4;
+      --muted: #b4afa8;
+      --line: #33312d;
+      --accent: #5eead4;
+      --accent-strong: #99f6e4;
+      --accent-soft: #14312e;
+      --on-accent: #0b1f1d;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  [hidden] { display: none !important; }
+  a { color: var(--accent-strong); }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: var(--on-accent); padding: 8px 14px; border-radius: 8px; z-index: 100; }
+  .skip:focus { left: 12px; }
+
+  /* Header */
+  header.site {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(160%) blur(10px);
+    -webkit-backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 16px; }
+  .brand { font-weight: 700; letter-spacing: -.01em; color: var(--text); text-decoration: none; font-size: 1.05rem; }
+  .brand span { color: var(--accent); }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; align-items: center; }
+  nav a { display: inline-block; padding: 8px 12px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: .93rem; font-weight: 500; }
+  nav a:hover { color: var(--text); background: var(--surface-2); }
+  nav a.cta { background: var(--accent); color: var(--on-accent); font-weight: 600; margin-left: 6px; }
+  nav a.cta:hover { background: var(--accent-strong); color: var(--on-accent); }
+  @media (max-width: 760px) { nav li:not(:last-child) { display: none; } }
+
+  /* Hero */
+  .hero { padding: 72px 0 40px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 18px; line-height: 1.35;
+    background: var(--accent-soft); color: var(--accent-strong);
+    font-size: .85rem; font-weight: 600;
+  }
+  .pill i { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 { font-size: clamp(2.4rem, 6vw, 3.9rem); line-height: 1.05; letter-spacing: -.03em; margin: 22px 0 10px; }
+  .role { font-size: clamp(1.15rem, 2.6vw, 1.5rem); color: var(--accent-strong); font-weight: 600; margin: 0 0 20px; letter-spacing: -.01em; }
+  .lede { font-size: 1.15rem; color: var(--muted); max-width: 720px; margin: 0 0 28px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; border-radius: 10px; font-weight: 600; font-size: .98rem;
+    text-decoration: none; border: 1px solid var(--line); color: var(--text); background: var(--surface);
+    transition: transform .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+  .btn.primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 36px 0 0; padding: 0; list-style: none; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+  .stat b { display: block; font-size: 2rem; letter-spacing: -.03em; color: var(--accent-strong); line-height: 1.1; }
+  .stat span { display: block; color: var(--muted); font-size: .88rem; margin-top: 6px; line-height: 1.4; }
+  @media (max-width: 860px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+  /* Sections */
+  section { padding: 64px 0 8px; scroll-margin-top: 70px; }
+  .eyebrow { color: var(--accent-strong); font-weight: 700; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 8px; }
+  h2 { font-size: clamp(1.7rem, 3.5vw, 2.3rem); letter-spacing: -.025em; line-height: 1.15; margin: 0 0 22px; }
+  h3 { margin: 0; font-size: 1.15rem; letter-spacing: -.01em; }
+  p { margin: 0 0 14px; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: 1.5fr 1fr; gap: 36px; align-items: start; }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: 24px; } }
+  .about p { color: var(--muted); font-size: 1.05rem; }
+  .facts { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+  .facts h3 { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+  .facts dl { margin: 0; display: grid; gap: 12px; }
+  .facts dt { font-size: .82rem; color: var(--muted); }
+  .facts dd { margin: 0; font-weight: 600; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 36px 0 0; padding: 0; list-style: none; counter-reset: s; }
+  .steps li { counter-increment: s; background: var(--surface-2); border-radius: var(--radius); padding: 18px; }
+  .steps li::before { content: counter(s, decimal-leading-zero); display: block; font-weight: 700; color: var(--accent); font-size: .85rem; margin-bottom: 6px; }
+  .steps b { display: block; margin-bottom: 4px; }
+  .steps span { color: var(--muted); font-size: .92rem; line-height: 1.5; display: block; }
+  @media (max-width: 860px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .steps { grid-template-columns: 1fr; } }
+
+  /* Cards + case studies */
+  .cases { display: grid; gap: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow); }
+  .case { display: grid; grid-template-columns: 1fr 240px; gap: 28px; }
+  @media (max-width: 760px) { .case { grid-template-columns: 1fr; gap: 18px; } }
+  .case .num { color: var(--accent); font-weight: 700; font-size: .85rem; margin-bottom: 4px; }
+  .rows { display: grid; gap: 14px; margin-top: 16px; }
+  .rows div b { display: block; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+  .rows div span { display: block; }
+  .result { background: var(--accent-soft); border-radius: 12px; padding: 20px; align-self: start; }
+  .result small { display: block; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-strong); font-weight: 700; margin-bottom: 10px; }
+  .result ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .result li b { display: block; font-size: 1.7rem; line-height: 1.1; letter-spacing: -.02em; color: var(--accent-strong); }
+  .result li span { font-size: .9rem; color: var(--muted); line-height: 1.35; display: block; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+  .tags li { font-size: .8rem; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
+  .also { margin-top: 18px; color: var(--muted); font-size: .96rem; }
+
+  /* Experience */
+  .jobs { display: grid; gap: 18px; }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+  .job-head .when { color: var(--muted); font-size: .92rem; font-variant-numeric: tabular-nums; }
+  .job .org { color: var(--accent-strong); font-weight: 600; margin: 2px 0 0; }
+  .job .sub { color: var(--muted); font-size: .92rem; margin: 0 0 4px; }
+  .job ul.bul { margin: 14px 0 0; padding-left: 20px; }
+  .job ul.bul li { margin-bottom: 8px; color: var(--muted); }
+  .job ul.bul li b { color: var(--text); font-weight: 600; }
+  details { margin-top: 6px; }
+  summary { cursor: pointer; color: var(--accent-strong); font-weight: 600; font-size: .93rem; padding: 6px 0; list-style-position: inside; }
+  details ul.bul { margin-top: 8px; }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  @media (max-width: 760px) { .skills { grid-template-columns: 1fr; } }
+  .skills h3 { margin-bottom: 4px; }
+
+  /* Education */
+  .two { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  @media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+  .two .card h3 { margin-bottom: 2px; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0 0 10px; }
+  .small-list { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: .95rem; }
+  .small-list li { margin-bottom: 4px; }
+  .sub-h { margin: 34px 0 14px; font-size: 1.05rem; }
+
+  /* Contact */
+  .contact { text-align: center; background: var(--accent-soft); border-radius: 20px; padding: 48px 24px; margin-top: 64px; }
+  .contact h2 { margin-bottom: 10px; }
+  .contact p { color: var(--muted); max-width: 560px; margin: 0 auto 22px; }
+  .contact .btns { justify-content: center; }
+  footer { padding: 36px 0 48px; text-align: center; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Srushti<span> Patil</span></a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Case studies</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a class="cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap" id="top">
+
+    <!-- HERO -->
+    <div class="hero">
+      <span class="pill"><i aria-hidden="true"></i> Open to Project Manager &amp; Technical Project Manager roles</span>
+      <h1>Srushti Patil</h1>
+      <p class="role">Technical Project Manager</p>
+      <p class="lede">I manage cross-functional software and infrastructure projects from initiation to closure, keeping scope, schedule, budget, risks and stakeholders under control. Six-plus years across Amazon, the University of Cincinnati and TCS, with an engineering foundation in AWS, distributed systems and CI/CD.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:srushti.patil5022@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/srushti0907/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" id="btn-github" data-github href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" hidden>GitHub</a>
+        <a class="btn" id="btn-resume" data-resume href="Srushti_Patil_Resume.pdf" hidden>Download resume</a>
+      </div>
+
+      <ul class="stats" aria-label="Selected results">
+        <li class="stat"><b>52%</b><span>faster processing from the Speed Inference modernization</span></li>
+        <li class="stat"><b>$160K</b><span>annual savings from the global STC routing model deprecation</span></li>
+        <li class="stat"><b>$27K</b><span>monthly cost cut by automating Last Mile simulation environments</span></li>
+        <li class="stat"><b>60%</b><span>better release stability on an automotive OEM platform</span></li>
+      </ul>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="eyebrow">About</p>
+      <h2>An engineer who manages projects</h2>
+      <div class="about">
+        <div>
+          <p>I started as a software engineer, building a warranty-processing platform for an automotive OEM at TCS and a clinical decision-support app at the University of Cincinnati. At Amazon I moved into technical project and program delivery: owning execution and launch readiness for production releases, running Scrum for my team, and coordinating modernization and deprecation work across engineering and analytics teams.</p>
+          <p>Because I have built and operated these systems myself, I can ask the right technical questions, catch dependency and reliability risks early, and keep engineers, product and operations working from the same plan.</p>
+        </div>
+        <aside class="facts" aria-label="Quick facts">
+          <h3>At a glance</h3>
+          <dl>
+            <dt>Certification</dt>
+            <dd>Preparing for PMP, October 2026</dd>
+            <dt>Most recent role</dt>
+            <dd>Amazon, 2022 to 2026</dd>
+            <dt>Delivery style</dt>
+            <dd>Agile, Scrum and hybrid</dd>
+            <dt>Education</dt>
+            <dd>M.S. Computer Science, University of Cincinnati</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <ol class="steps" aria-label="How I run projects">
+        <li><b>Initiate and scope</b><span>Define scope with stakeholders and validate incoming requests before work starts.</span></li>
+        <li><b>Plan</b><span>Break work into milestones, map cross-team dependencies and set the budget.</span></li>
+        <li><b>Execute and control</b><span>Run sprints, track risks and commitments, and hold readiness reviews before anything ships.</span></li>
+        <li><b>Close and learn</b><span>Track KPIs and SLAs, publish release notes and capture lessons learned in a retrospective.</span></li>
+      </ol>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="work">
+      <p class="eyebrow">Selected work</p>
+      <h2>Case studies</h2>
+      <div class="cases">
+
+        <article class="card case">
+          <div>
+            <div class="num">01</div>
+            <h3>Speed Inference modernization</h3>
+            <ul class="tags"><li>Project planning</li><li>Dependency management</li><li>Risk management</li><li>Stakeholder alignment</li></ul>
+            <div class="rows">
+              <div><b>The challenge</b><span>Modernize the Speed Inference platform, work that spanned both engineering and analytics teams.</span></div>
+              <div><b>My role</b><span>Led project planning and execution across teams: scope, milestones, dependencies, risks and stakeholder alignment.</span></div>
+            </div>
+          </div>
+          <div class="result">
+            <small>Outcome</small>
+            <ul>
+              <li><b>52%</b><span>faster processing</span></li>
+              <li><b>30%</b><span>higher cluster utilization</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card case">
+          <div>
+            <div class="num">02</div>
+            <h3>Global deprecation of the STC routing model</h3>
+            <ul class="tags"><li>Deprecation</li><li>Technical debt</li><li>Cost reduction</li></ul>
+            <div class="rows">
+              <div><b>The challenge</b><span>Retire the STC routing model globally and remove the technical debt it carried.</span></div>
+              <div><b>My role</b><span>Executed the global deprecation end to end.</span></div>
+            </div>
+          </div>
+          <div class="result">
+            <small>Outcome</small>
+            <ul>
+              <li><b>$160K</b><span>in annual savings</span></li>
+              <li><b>Global</b><span>scope, with technical debt reduced</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card case">
+          <div>
+            <div class="num">03</div>
+            <h3>Dynamic Turn Costs v4 launch and change-management readiness</h3>
+            <ul class="tags"><li>Launch readiness</li><li>Change management</li><li>Release commitments</li><li>Process design</li></ul>
+            <div class="rows">
+              <div><b>The challenge</b><span>Take a new version of Dynamic Turn Costs to production with no regressions.</span></div>
+              <div><b>My role</b><span>Owned project execution and launch readiness, tracking milestones, cross-team dependencies, risks and release commitments. Designed a fillable MCM template that standardized what change management requires, from test planning to validation and pre-launch readiness reviews.</span></div>
+            </div>
+          </div>
+          <div class="result">
+            <small>Outcome</small>
+            <ul>
+              <li><b>Zero</b><span>regressions in production</span></li>
+              <li><b>Minutes</b><span>to prepare an MCM with the new template</span></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+      <p class="also"><b>Also at Amazon:</b> redesigned Tier-1 startup workflows to cut service dependencies and improve reliability, with automated configuration management and CloudWatch alerting; automated Last Mile simulation environments, cutting $27K in monthly cost.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've worked</h2>
+      <div class="jobs">
+
+        <article class="card job">
+          <div class="job-head">
+            <div>
+              <h3>Software Development Engineer, Technical Project &amp; Program Delivery</h3>
+              <p class="org">Amazon</p>
+            </div>
+            <span class="when">Feb 2022 to Apr 2026</span>
+          </div>
+          <p class="sub">AWS, Java, Python, SQL, distributed systems, CI/CD, Jira, Asana, M365, GitHub</p>
+          <ul class="bul">
+            <li><b>Launch readiness:</b> owned project execution for Dynamic Turn Costs v4, tracking milestones, cross-team dependencies, risks and release commitments to a zero-regression production release.</li>
+            <li><b>Change management:</b> designed a fillable MCM template that cut preparation time to minutes and standardized test planning, validation and pre-launch readiness reviews.</li>
+            <li><b>Modernization:</b> drove planning and execution for Speed Inference across engineering and analytics teams, delivering 52% faster processing and 30% higher cluster utilization.</li>
+            <li><b>Scrum Master:</b> ran sprint planning, backlog refinement, standups, reviews and retrospectives, tracking commitments, dependencies and risks to make delivery more predictable.</li>
+            <li><b>Project lifecycle:</b> managed initiation, execution, closure, budget tracking and retrospective documentation to keep work aligned with organizational goals.</li>
+            <li><b>Deprecation:</b> executed the global deprecation of the STC routing model, reducing technical debt and saving $160K a year.</li>
+          </ul>
+          <details>
+            <summary>More from this role</summary>
+            <ul class="bul">
+              <li><b>Reliability:</b> led the redesign of Tier-1 startup workflows to reduce service dependencies and improve reliability, with automated configuration management and CloudWatch alerting.</li>
+              <li><b>Cost:</b> automated Last Mile simulation environments, improving consistency and cutting $27K in monthly cost.</li>
+              <li><b>Mentoring:</b> guided a junior engineer and an intern on scope, priorities and delivery of independent projects within 90 days.</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="card job">
+          <div class="job-head">
+            <div>
+              <h3>Student Software Developer</h3>
+              <p class="org">University of Cincinnati</p>
+            </div>
+            <span class="when">Feb 2021 to Feb 2022</span>
+          </div>
+          <p class="sub">React.js, HTML/CSS, UI architecture, workflow design, GitLab</p>
+          <ul class="bul">
+            <li>Built a React decision-support app for 7,500+ medical staff, translating clinical guidelines into workflows on a reusable UI architecture.</li>
+            <li>Partnered with clinical stakeholders to validate workflows, write documentation and support a universal rollout.</li>
+          </ul>
+        </article>
+
+        <article class="card job">
+          <div class="job-head">
+            <div>
+              <h3>System Engineer</h3>
+              <p class="org">Tata Consultancy Services <span style="color:var(--muted);font-weight:500">· Client: Daimler Truck North America</span></p>
+            </div>
+            <span class="when">Sep 2018 to Jan 2021</span>
+          </div>
+          <p class="sub">Java, Spring Boot, REST APIs, distributed systems, SQL, DevOps</p>
+          <ul class="bul">
+            <li>Delivered a scalable warranty-processing platform for an automotive OEM, integrating 15,000+ business rules to improve throughput and reduce latency.</li>
+            <li>Modernized a monolith with Spring Boot and REST APIs, optimizing middleware and 25,000+ business rules for 40% faster response times.</li>
+            <li>Improved release stability by 60% in a regulated OEM environment through scope management, security scanning, code-quality controls and crisis-response coordination.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="eyebrow">Skills</p>
+      <h2>What I bring</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Project delivery</h3>
+          <ul class="tags">
+            <li>Project planning</li><li>Project &amp; program execution</li><li>Scope, schedule &amp; release management</li><li>Budget tracking</li><li>Program governance</li><li>Requirements &amp; dependency management</li><li>Risk identification &amp; mitigation</li><li>Technical launch governance</li><li>KPI / SLA tracking</li><li>Incoming request validation</li><li>Change management (ITIL)</li><li>Release notes &amp; lessons learned</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ways of working</h3>
+          <ul class="tags">
+            <li>Agile &amp; hybrid delivery</li><li>Scrum facilitation</li><li>Cross-functional leadership</li><li>Stakeholder communication</li><li>Mentoring</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul class="tags">
+            <li>Jira</li><li>Asana</li><li>Smartsheet</li><li>Microsoft Project</li><li>Word, Excel &amp; PowerPoint</li><li>GitHub</li><li>GitLab</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Engineering foundation</h3>
+          <ul class="tags">
+            <li>AWS &amp; CloudWatch</li><li>Distributed systems</li><li>Microservices</li><li>CI/CD</li><li>REST APIs</li><li>Java &amp; Spring Boot</li><li>Python</li><li>SQL</li><li>C/C++</li><li>React.js</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <p class="eyebrow">Education &amp; recognition</p>
+      <h2>Background</h2>
+      <div class="two">
+        <article class="card">
+          <h3>University of Cincinnati</h3>
+          <p class="meta">M.S., Computer Science · 2021 to 2022 · GPA 3.87 / 4</p>
+          <ul class="small-list">
+            <li>Graduate Student Representative, Indian Students Association</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Savitribai Phule Pune University</h3>
+          <p class="meta">B.S., Information Technology · 2014 to 2018 · First Class with Distinction</p>
+          <ul class="small-list">
+            <li>Director of Operations, Student Association of Information Technology (2017 to 2018)</li>
+            <li>Student Coordinator, Student Association of Information Technology (2016 to 2017)</li>
+            <li>Member of the Advisory Committee, Innovision 2018 national technical symposium</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="sub-h">Awards at Tata Consultancy Services</h3>
+      <div class="two">
+        <article class="card">
+          <h3>Best Team Award</h3>
+          <p class="meta">July 2020</p>
+          <p style="margin:0;color:var(--muted)">For minimal-defect delivery with 100% of enhancement requests delivered for the build.</p>
+        </article>
+        <article class="card">
+          <h3>Outstanding Work Contribution Award</h3>
+          <p class="meta">October 2019</p>
+          <p style="margin:0;color:var(--muted)">On-the-spot award for outstanding contribution to the organization.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact" style="scroll-margin-top:80px">
+      <h2>Let's talk</h2>
+      <p>I'm looking for Project Manager and Technical Project Manager roles. Email is the fastest way to reach me.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:srushti.patil5022@gmail.com">srushti.patil5022@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/srushti0907/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" data-github href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" hidden>GitHub</a>
+        <a class="btn" data-resume href="Srushti_Patil_Resume.pdf" hidden>Download resume</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Srushti Ajay Patil</div>
+</footer>
+
+<script>
+  // 1) GitHub links: set your username once. Until then the links stay hidden.
+  var GITHUB_URL = "https://github.com/YOUR-GITHUB-USERNAME";
+  if (GITHUB_URL.indexOf("YOUR-GITHUB-USERNAME") === -1) {
+    document.querySelectorAll("[data-github]").forEach(function (el) {
+      el.href = GITHUB_URL;
+      el.hidden = false;
+    });
+  }
+
+  // 2) Resume links: appear automatically once Srushti_Patil_Resume.pdf is uploaded next to this file.
+  (function () {
+    try {
+      fetch("Srushti_Patil_Resume.pdf", { method: "HEAD" }).then(function (r) {
+        if (r.ok) {
+          document.querySelectorAll("[data-resume]").forEach(function (el) { el.hidden = false; });
+        }
+      }).catch(function () {});
+    } catch (e) {}
+  })();
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
